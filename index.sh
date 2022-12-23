@@ -6,10 +6,16 @@ _() {
   read -r USERNAME
   echo "GitHub Access token: "
   read -r ACCESS_TOKEN
+  echo "Type your e-mail (to set commit e-mail, leave blank to skip): "
+  read -r EMAIL
+  echo "Type your name (to set git username, leave blank to skip): "
+  read -r GIT_USERNAME
 
   [ -z "$USERNAME" ] && exit 1
   [ -z "$ACCESS_TOKEN" ] && exit 1  
   [ ! -d $YEAR ] && mkdir $YEAR
+  [ -n "$EMAIL" ] && git config user.email "${EMAIL}"
+  [ -n "$GIT_USERNAME" ] && git config user.name "${GIT_USERNAME}"
 
   cd "${YEAR}" || exit
   git init
