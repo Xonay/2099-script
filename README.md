@@ -33,3 +33,5 @@ This commit is then pushed to GitHub (provided you already have made a repositor
 GitHub recognizes the commit to have been created at `1st January, 2099` and thus registers a contribution at that moment in time. If you scroll to the first year on your profile, you will see there is a single contribution to your `2099` repository, on 1st January.
 
 # References
+
+https://github.com/antfu/1990-script
