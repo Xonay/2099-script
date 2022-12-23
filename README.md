@@ -11,7 +11,7 @@ Make your GitHub history back to 1970.
 Run the following script
 
 ```bash
-$ sh -c "$(curl -fsSL https://raw.github.com/Xonay/1970-script/master/index.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/Xonay/1970-script/master/index.sh)"
 ```
 
 Enter you GitHub username and access token and then you are done :)
