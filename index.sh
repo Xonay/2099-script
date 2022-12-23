@@ -28,7 +28,3 @@ _() {
 } && _
 
 unset -f _
-unset -f USERNAME
-unset -f ACCESS_TOKEN
-unset -f GIT_AUTHOR_DATE
-unset -f GIT_COMMITTER_DATE
