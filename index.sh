@@ -22,7 +22,7 @@ _() {
   git add .
   GIT_AUTHOR_DATE="${YEAR}-01-01T00:00:00.000Z" \
     GIT_COMMITTER_DATE="${YEAR}-01-01T00:00:00.000Z" \
-    git commit --allow-empty -m ""
+    git commit --allow-empty -m "."
   git remote add origin "https://${ACCESS_TOKEN}@github.com/${USERNAME}/${YEAR}.git"
   git branch -M 1970
   git push -u origin 1970 -f
