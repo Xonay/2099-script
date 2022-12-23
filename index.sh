@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 _() {
-  YEAR="1970"
+  YEAR="2099"
   echo "GitHub Username: "
   read -r USERNAME
   echo "GitHub Access token: "
@@ -22,7 +22,7 @@ _() {
   git add .
   GIT_AUTHOR_DATE="${YEAR}-01-01T00:00:00.000Z" \
     GIT_COMMITTER_DATE="${YEAR}-01-01T00:00:00.000Z" \
-    git commit --allow-empty -m "1970"
+    git commit --allow-empty -m "2099"
   git remote add origin "https://${ACCESS_TOKEN}@github.com/${USERNAME}/${YEAR}.git"
   git branch -M main
   git push -u origin main -f
