@@ -14,11 +14,11 @@ _() {
   [ -z "$USERNAME" ] && exit 1
   [ -z "$ACCESS_TOKEN" ] && exit 1  
   [ ! -d $YEAR ] && mkdir $YEAR
-  [ -n "$EMAIL" ] && git config user.email "${EMAIL}"
-  [ -n "$GIT_USERNAME" ] && git config user.name "${GIT_USERNAME}"
 
   cd "${YEAR}" || exit
   git init
+  [ -n "$EMAIL" ] && git config user.email "${EMAIL}"
+  [ -n "$GIT_USERNAME" ] && git config user.name "${GIT_USERNAME}"
   git add .
   GIT_AUTHOR_DATE="${YEAR}-01-01T00:00:00.000Z" \
     GIT_COMMITTER_DATE="${YEAR}-01-01T00:00:00.000Z" \
